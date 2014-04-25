@@ -1,0 +1,7 @@
+This project consists of the RPM spec files and local patches required to
+maintain the Apache HTTPD 2.4 packages for EL6.
+
+Links to complete SRPMS with all upstream dependencies as well as local
+patches will be provided.  I just need to verify that there are no licensing
+issues related to distribution first.
+

@@ -1,0 +1,13 @@
+diff --git a/Makefile.in b/Makefile.in
+index 963fead..df25343 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -90,7 +90,7 @@ install: $(TARGETS) install-modules
+ 	$(INSTALL) -m 755 apu-config.out $(DESTDIR)$(bindir)/$(APU_CONFIG)
+ 
+ $(TARGET_LIB): $(OBJECTS) $(EXTRA_OBJECTS)
+-	$(LINK) @lib_target@ $(EXTRA_OBJECTS) $(ALL_LIBS) $(APRUTIL_LDFLAGS) $(APRUTIL_LIBS)
++	$(LINK) -release httpd24 @lib_target@ $(EXTRA_OBJECTS) $(ALL_LIBS) $(APRUTIL_LDFLAGS) $(APRUTIL_LIBS)
+ 
+ install-modules: install-modules-@APU_HAVE_MODULES@
+ 

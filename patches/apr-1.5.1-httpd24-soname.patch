@@ -1,0 +1,12 @@
+diff -Naur apr-1.5.1.dist/Makefile.in apr-1.5.1/Makefile.in
+--- apr-1.5.1.dist/Makefile.in	2014-03-17 11:10:26.000000000 -0400
++++ apr-1.5.1/Makefile.in	2014-04-23 18:25:54.300147186 -0400
+@@ -99,7 +99,7 @@
+ 	fi
+ 
+ $(TARGET_LIB): $(OBJECTS)
+-	$(LINK) @lib_target@ $(ALL_LIBS)
++	$(LINK) -release httpd24 @lib_target@ $(ALL_LIBS)
+ 
+ encoding/apr_escape.lo: include/private/apr_escape_test_char.h 
+ 

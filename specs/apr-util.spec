@@ -11,7 +11,7 @@
 Summary: Apache Portable Runtime Utility library
 Name: %{?scl:%scl_prefix}apr-util
 Version: 1.5.3
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: ASL 2.0
 Group: System Environment/Libraries
 URL: http://apr.apache.org/
@@ -225,7 +225,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/aclocal/*.m4
 
 %changelog
-* Wed Apr 23 2014 Gabriel O'Brien <gabriel.quay.net> - 1.5.3-1
+* Sun Apr 27 2014 Gabriel O'Brien <gabriel.quay.net> - 1.5.3-2
+- repackaged for "release"
 - update to 1.5.3
 - ported httpd24-soname patch to 1.5.3
 

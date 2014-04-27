@@ -7,7 +7,7 @@
 Summary: Apache Portable Runtime library
 Name:  %{?scl:%scl_prefix}apr
 Version: 1.5.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 # ASL 2.0: everything
 # ISC: network_io/apr-1.4.6/network_io/unix/inet_?to?.c
 # BSD with advertising: strings/apr_snprintf.c, strings/apr_fnmatch.c,
@@ -133,7 +133,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/aclocal/*.m4
 
 %changelog
-* Wed Apr 23 2014 Gabriel O'Brien <gabriel.quay.net> - 1.5.1-1
+* Sun Apr 27 2014 Gabriel O'Brien <gabriel.quay.net> - 1.5.1-2
+- repackaging for "release"
 - update to 1.5.1
 - ported httpd24-soname patch to 1.5.1
 

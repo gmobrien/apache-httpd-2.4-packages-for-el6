@@ -1,0 +1,35 @@
+This directory contains the fully patched sources used to build:
+
+- Apache httpd 2.4.9, released March 17, 2014
+    https://httpd.apache.org/
+
+- Apache Portable Runtime 1.5.1, released April 21, 2014
+    https://apr.apache.org/
+
+- Apache Portable Runtime Utility 1.5.3, released November 18, 2013
+    https://apr.apache.org/
+
+- Local configuration files and repository release pacakges 6-1.1
+
+RELEASE NOTES:
+
+* Sun Apr 27 2014 Gabriel O'Brien <gabriel.quay.net> - 1.5.1-2
+- repackaging for "release"
+- update to 1.5.1
+- ported httpd24-soname patch to 1.5.1
+- files modified in this release:
+    apr-1.5.1/Makefile.in
+
+* Sun Apr 27 2014 Gabriel O'Brien <gabriel.quay.net> - 1.5.3-2
+- repackaged for "release"
+- update to 1.5.3
+- ported httpd24-soname patch to 1.5.3
+- files modified in this release:
+    apr-util-1.5.3/Makefile.in
+
+* Sun Apr 27 2014 Gabriel O'Brien <gabriel.quay.net> - 2.4.9-2
+- removed all known EL branding
+- repackaged for "official" release
+- files modified in this release:
+    httpd-2.4.9/support/apxs.in
+

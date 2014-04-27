@@ -1,7 +1,32 @@
+This is my update and rebuild of Jan Kaluza's Apache HTTPD 2.4 for EL6.
+
+  http://repos.fedorapeople.org/repos/jkaluza/httpd24/
+
 This project consists of the RPM spec files and local patches required to
 maintain the Apache HTTPD 2.4 packages for EL6.
 
-Links to complete SRPMS with all upstream dependencies as well as local
-patches will be provided.  I just need to verify that there are no licensing
-issues related to distribution first.
+SRPMS for apr, apr-util and httpd are availabile from my website.
+
+  https://quay.net/pub/linux/repo/el/6/SRPMS/
+
+You can easily install this repository by following the instructions on the
+wiki: 
+
+Any support related questions can be submitted to the issue tracker on
+Bitbucket:
+
+# BACKGROUND #
+
+It is my intention to maintain these packages until a similar software stack is
+stable on an EL7 platform, but I am only maintaining thise pacakges in my spare
+time.  I don't have the time or resources to maintain software as part of my
+day job!
+
+I also want to document how to update and run a an up-to-date and optimized
+LAMP stack on EL6.  Suggestions are welcome if you see a better way to do
+things.  I'm going to be looking closely at the current Fedora packaging
+process as I haven't had to maintain RPMs for several years and there have
+been some advances in the state of the art.
+
+See src/LICENSE for licensing details.
 

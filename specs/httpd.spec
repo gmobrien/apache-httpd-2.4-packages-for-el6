@@ -27,7 +27,7 @@
 %define suexec_caller apache
 %define mmn 20120211
 %define mmnisa %{mmn}%{__isa_name}%{__isa_bits}
-%define vstring Red Hat
+%define vstring httpd24el6
 
 # Drop automatic provides for module DSOs
 %{?filter_setup:
@@ -38,7 +38,7 @@
 Summary: Apache HTTP Server
 Name: %{?scl:%scl_prefix}httpd
 Version: 2.4.9
-Release: 1%{?dist}
+Release: 2%{?dist}
 URL: http://httpd.apache.org/
 Source0: http://www.apache.org/dist/httpd/httpd-%{version}.tar.bz2
 Source1: index.html
@@ -720,6 +720,10 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Sun Apr 27 2014 Gabriel O'Brien <gabriel.quay.net> - 2.4.9-2
+- removed all known EL branding
+- repackaged for "official" release
+
 * Wed Apr 23 2014 Gabriel O'Brien <gabriel.quay.net> - 2.4.9-1
 - Updated HTTPD, APR and tools to current versions
 - backed out r1332643
